@@ -1,8 +1,8 @@
 {
   "build": {
-    "productName": "Meu-Chat-27-10-D (teste 10280625)",
-    "appId": "com.maikon.app.nteste10280625",
-    "executableName": "Meu-Chat-27-10-D-nteste10280625"
+    "productName": "Meu-Chat-27-10-D (teste 10280629)",
+    "appId": "com.maikon.app.nteste10280629",
+    "executableName": "Meu-Chat-27-10-D-nteste10280629"
   },
-  "portaDoPrograma": 10467
+  "portaDoPrograma": 10479
 }

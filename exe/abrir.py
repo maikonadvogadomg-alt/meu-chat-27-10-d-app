@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-Meu-Chat-27-10-D — programa .exe LEVE (Python), feito pelo Mini SK.
+Meu-Chat-27-10-D (teste 10280626) — programa .exe LEVE (Python), feito pelo Mini SK.
 
 Não usa Electron: por isso é pequeno e não dá tela preta.
 Você dá dois cliques, abre uma janelinha preta que "liga" o app,
 e ele aparece numa janela própria do Edge/Chrome (modo app).
 O site inteiro (pasta www) vai guardado DENTRO do .exe.
 
-- Porta fixa (7845): é ela que guarda os seus dados. Não mude.
+- Porta fixa (7897): é ela que guarda os seus dados. Não mude.
 - Só o próprio computador acessa (127.0.0.1). Ninguém de fora entra.
 - Se já estiver ligado, clicar de novo só abre a janela outra vez.
 - Para fechar de vez: feche a janelinha preta.
@@ -20,8 +20,8 @@ try:
 except Exception:
     pass
 
-NOME = 'Meu-Chat-27-10-D'
-PORTA = int(os.environ.get('PORTA', '7845'))
+NOME = 'Meu-Chat-27-10-D (teste 10280626)'
+PORTA = int(os.environ.get('PORTA', '7897'))
 ENDERECO = 'http://127.0.0.1:%d/' % PORTA
 # "lacre" já ligado de fábrica: o ⚡ Node (WebContainer) funciona no computador sem recarregar
 ISOLAR = False

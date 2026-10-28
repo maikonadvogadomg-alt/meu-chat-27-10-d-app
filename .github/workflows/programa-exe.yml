@@ -29,13 +29,13 @@ jobs:
         run: |
           $icone = @()
           if (Test-Path "icons\icon-512.png") { $icone = @("--icon", "icons\icon-512.png") }
-          python -m PyInstaller --onefile --console --name "meu-chat-27-10-d" @icone --add-data "exe\www;www" --distpath dist-exe exe\abrir.py
+          python -m PyInstaller --onefile --console --name "meu-chat-27-10-d-teste-10280626" @icone --add-data "exe\www;www" --distpath dist-exe exe\abrir.py
       - name: Conferir se o programa liga e abre o app
         shell: pwsh
         run: |
           $env:SEM_ABRIR = "1"
           $env:PORTA = "7799"
-          $p = Start-Process -FilePath "dist-exe\meu-chat-27-10-d.exe" -PassThru
+          $p = Start-Process -FilePath "dist-exe\meu-chat-27-10-d-teste-10280626.exe" -PassThru
           Start-Sleep -Seconds 12
           $r = Invoke-WebRequest -Uri "http://127.0.0.1:7799/" -UseBasicParsing
           Stop-Process -Id $p.Id -Force
@@ -45,11 +45,11 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: exe-${{ github.run_number }}
-          name: "Meu-Chat-27-10-D ${{ github.run_number }}"
-          files: dist-exe/meu-chat-27-10-d.exe
+          name: "Meu-Chat-27-10-D (teste 10280626) ${{ github.run_number }}"
+          files: dist-exe/meu-chat-27-10-d-teste-10280626.exe
       - name: Entregar também em Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: meu-chat-27-10-d-Windows
-          path: dist-exe/meu-chat-27-10-d.exe
+          name: meu-chat-27-10-d-teste-10280626-Windows
+          path: dist-exe/meu-chat-27-10-d-teste-10280626.exe
           retention-days: 30
