@@ -1,0 +1,17 @@
+{
+  "titulo": "Meu-Chat-27-10-D",
+  "arquivo": "hub.html",
+  "itens": [
+    {
+      "path": "index.html",
+      "nome": "Meu Chat",
+      "desc": "",
+      "on": true,
+      "icone": "icons/icon.svg"
+    }
+  ],
+  "sub": "",
+  "logo": "",
+  "tema": "dourado",
+  "links": []
+}
